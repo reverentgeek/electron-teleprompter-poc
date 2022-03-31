@@ -1,0 +1,17 @@
+{
+	"name": "electron-teleprompter",
+	"version": "1.0.0",
+	"description": "A desktop teleprompter app that supports markdown",
+	"main": "src/main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"keywords": [],
+	"author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com/)",
+	"license": "MIT",
+	"devDependencies": {
+		"electron": "^18.0.1",
+		"eslint": "^8.12.0",
+		"eslint-config-reverentgeek": "^3.2.1"
+	}
+}
