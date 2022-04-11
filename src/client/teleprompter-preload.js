@@ -8,11 +8,6 @@ const replaceHtml = ( selector, html ) => {
 	if ( element ) element.innerHTML = html;
 };
 
-const replaceText = ( selector, text ) => {
-	const element = document.getElementById( selector );
-	if ( element ) element.innerText = text;
-};
-
 async function getContent() {
 	const fileName = path.join( __dirname, "content.md" );
 	const markdown = await fs.readFile( fileName, { encoding: "utf-8" } );
@@ -23,10 +18,6 @@ async function getContent() {
 
 window.addEventListener( "DOMContentLoaded", async () => {
 	try {
-		for ( const dependency of [ "chrome", "node", "electron" ] ) {
-			replaceText( `${ dependency }-version`, process.versions[dependency] );
-		}
-
 		await getContent();
 	} catch( err ) {
 		ipcRenderer.send( "err", err );

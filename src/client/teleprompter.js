@@ -1,1 +1,1 @@
-console.log( "from the renderer" );
+// console.log( "from the renderer" );

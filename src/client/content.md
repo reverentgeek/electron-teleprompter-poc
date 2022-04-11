@@ -1,13 +1,9 @@
 # Teleprompter Script
 
-## Page 1
+## Section 1
 
-This is cool, right?
+I don't _need_ a script to tell you you're awesome. But here's one anyway so you can see how this app works!
 
-* Bullet point 1
-* Bullet point 2
-* Bullet point 3
-
-## Page 2
+## Section 2
 
 A little more content here, I'm afraid.
