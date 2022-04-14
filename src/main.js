@@ -53,17 +53,12 @@ app.whenReady().then( async () => {
 	} );
 
 	app.on( "window-all-closed", () => {
-		if ( process.platform !== "darwin" ) app.quit();
+		// if ( process.platform !== "darwin" ) app.quit();
+		app.quit();
 	} );
 } );
 
 ipcMain.on( "err", ( event, args ) => {
 	console.log( event, args );
-	// fs.readFile( "path/to/file", ( error, data ) => {
-	//   // Do something with file contents
-
-	//   // Send result back to renderer process
-	//   win.webContents.send( "fromMain", responseObj );
-	// } );
 } );
 
